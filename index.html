@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Tiket Kereta</title>
+</head>
+<body>
+
+    <!-- Daftar Harga Kereta -->
+    <div style="text-align: center">
+        <h2>Daftar Tiket kereta Api</h2>
+        <table border="1" style="width:50%;margin:auto; margin-bottom:20px">
+            <tr>
+                <th>No</th>
+                <th>Kota</th>
+                <th>Nama Kereta</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Surabaya</td>
+                <td>Gajahyana</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Malang</td>
+                <td>Dhoho</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Solo</td>
+                <td>Penataran</td>  
+            </tr>
+        </table>
+
+        <table border="1" style="width:50%;margin:auto">
+            <tr>
+                <th>No</th>
+                <th>Kelas Kereta</th>
+                <th>Harga Tiket</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ekonomi</td>
+                <td>Rp.20.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Standar</td>
+                <td>Rp.50.000</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Eksklusif</td>
+                <td>Rp.100.000</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- form penjualan -->
+    <div style="text-align: center; margin-top:20px">
+        <table border="1" style="width:50%;margin:auto">
+            <tr>
+                <th>form penjualan</th>
+                <th>Struk Pembayaran</th>
+            </tr>
+            <tr>
+                <td>
+
+                    <!-- input nama pembeli -->
+                    <div class="form-group" style="margin-top:20px">
+                        <label>Nama Anda</label>
+                        <input id="nama_pembeli" type="text">
+                    </div>
+
+                    <!-- pilih kota -->
+                    <div class="form-group" style="margin-top:20px">
+                        <label>Pilih Kota</label>
+                        <select id="nama_kota">
+                            <option value="0">Surabaya</option>  
+                            <option value="1">Malang</option>  
+                        </select>
+                    </div>
+
+                     <!-- pilih kereta -->
+                     <div class="form-group" style="margin-top:20px">
+                        <label>Pilih kereta</label>
+                        <select id="nama_kereta">
+                            <option value="0">Gajahyana</option>  
+                            <option value="1">Dhoho</option>  
+                            <option value="2">Penataran</option>  
+                        </select>
+                    </div>
+
+                    <!-- pilih kelas -->
+                    <div class="form-group" style="margin-top:20px">
+                        <label>Pilih Kelas</label>
+                        <select id="nama_kelas">
+                            <option value="0">Ekonomi</option>  
+                            <option value="1">Standar</option>  
+                            <option value="2">Eksklusif</option>  
+                        </select>
+                    </div>
+
+                    <!-- input jumlah pembelian tiket -->
+                    <div class="form-group" style="margin-top:20px">
+                        <label>Jumlah Tiket</label>
+                        <input id="jumlah_tiket" type="number">
+                    </div>
+
+                    <!-- input nama pembeli -->
+                    <div class="form-group" style="margin-top:20px;margin-bottom:20px">
+                        <button onclick="pesan()">Pesan</button>
+                        <button>Ulangi</button>
+                    </div>
+
+                </td>
+
+                <td>
+                    <div id="form-struk">
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
