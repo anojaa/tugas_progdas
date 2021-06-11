@@ -22,6 +22,37 @@ const hargaTiket = [
     100000
 ]
 
+
+var kota = document.querySelector('#nama_kota');
+var kereta = document.querySelector('#nama_kereta');
+var kelas = document.querySelector('#nama_kelas');
+var html = '';
+
+// perulangan untuk memasukkan list array menjadi seubuah opsi
+
+    // perulangan kota 
+    kotaTujuan.forEach((e,v) => {
+        html += `<option value="${v}">${e}</option>`
+    })
+    kota.innerHTML = html
+    html = ''
+
+    // perulangan kereta
+    namaKereta.forEach((e,v) => {
+        html += `<option value="${v}">${e}</option>`
+    })
+    kereta.innerHTML = html
+    html = ''
+
+    // perulangan kelas
+    kelasKereta.forEach((e,v) => {
+        html += `<option value="${v}">${e}</option>`
+    })
+    kelas.innerHTML = html
+    html = ''
+
+
+
 function pesan() {
 
     let formStruk = document.querySelector('#form-struk')
